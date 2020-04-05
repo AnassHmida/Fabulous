@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Fabulous</string>
+<string name="login_button_text">Se Connecter</string>
+    <string name="Ou">Ou</string>
+    <string name="login_fb_text">Se Connecter avec facebook</string>
+    <string name="new_here">    Vous étes nouveau ici ?</string>
+    <string name="create_account">    Vous étes nouveau ici ?</string>
+    <string name="act_fragment_title">Actualités</string>
+
+
+
+
+</resources>

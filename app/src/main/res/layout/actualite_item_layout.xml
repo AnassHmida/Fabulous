@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    android:padding="10dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:id="@+id/user_img"
+        android:src="@drawable/users"
+        android:tint="@color/TextColor"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    <LinearLayout
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/user_last_login"
+            android:layout_width="wrap_content"
+            android:textColor="@color/gray"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@color/white">
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/actualite_title"/>
+        <TextView
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/actualite_description"/>
+        <ImageView
+            android:id="@+id/mainimg"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:src="@mipmap/ic_launcher"
+            android:layout_height="400dp" />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/notlike"
+                android:layout_width="20dp"
+
+                android:layout_height="20dp"
+                android:id="@+id/like"/>
+            <TextView
+                android:layout_marginStart="10dp"
+               android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/llike_count"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

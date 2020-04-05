@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+
+    android:background="@color/gray"
+    >
+    <Button
+        android:id="@+id/first_item"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@android:color/holo_blue_dark"
+        android:text="PLASMA PEN (FR)" />
+    <Button
+        android:id="@+id/second_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@android:color/holo_blue_dark"
+        android:text="FABULOUSPIN &amp; MICROBLADING (FR)" />
+    <Button
+        android:id="@+id/third_item"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@android:color/holo_blue_dark"
+        android:text="BB GLOW &amp;  MICRONEEDLING (FR)" />
+
+    <Button
+        android:id="@+id/fourth_item"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@android:color/holo_blue_dark"
+        android:text="HYALURONIC PEN (FR)" />
+
+    <Button
+        android:id="@+id/cancel_post"
+        android:background="@color/white"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Annuler" />
+
+</LinearLayout>

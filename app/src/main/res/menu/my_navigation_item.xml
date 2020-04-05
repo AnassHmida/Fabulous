@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="formations"
+        android:id="@+id/forms"
+        android:icon="@drawable/video_1"
+       />
+    <item android:title="actualités"
+        android:id="@+id/acts"
+        android:icon="@drawable/paper_2"
+       />
+    <item android:title="shop"
+        android:id="@+id/shop"
+        android:icon="@drawable/chat_3"
+      />
+    <item android:title="subjects"
+        android:id="@+id/subjects"
+        android:icon="@drawable/face_4"
+        />
+    <item android:title="config"
+        android:id="@+id/config"
+        android:icon="@drawable/other_5"
+        />
+</menu>

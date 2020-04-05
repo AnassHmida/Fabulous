@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+
+    android:background="@color/gray"
+    >
+
+    <Button
+        android:id="@+id/confirm_new_post"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@android:color/holo_blue_dark"
+        android:text="Nouvelle publication" />
+
+    <Button
+        android:id="@+id/confirm_new_montage"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@android:color/holo_blue_dark"
+        android:text="Montage Photos" />
+
+    <Button
+        android:id="@+id/cancel_post"
+        android:background="@color/white"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Annuler" />
+
+</LinearLayout>

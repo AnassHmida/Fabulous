@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="X"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Nouvelle publication"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/title"
+      >
+
+        <TextView
+            android:id="@+id/spinner_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="16dp"
+            android:text="Sélectionnez technique.."
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:tint="@color/black"
+            android:layout_marginEnd="10dp"
+            android:src="@android:drawable/arrow_down_float"/>
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/spinner">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/post_description"
+    android:layout_marginStart="16dp"
+    android:textSize="15dp"
+    android:hint="Type your description here .."
+    android:background="@android:color/transparent"
+    />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/post_description">
+            <ImageView
+                android:id="@+id/mainimg"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+            <TextView
+                android:id="@+id/remove_img"
+                android:visibility="gone"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+
+                android:background="@color/black"
+
+                android:text=" X "
+                android:textColor="@color/colorPrimary"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    </ScrollView>
+    <ImageView
+        android:id="@+id/choose_picture"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/imageicon"
+
+       android:layout_alignParentBottom="true"/>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true">
+
+
+        <Button
+            android:id="@+id/publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Publish" />
+
+        <ProgressBar
+            android:id="@+id/new_post_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/colorPrimary"/>
+
+    </FrameLayout>
+
+
+</RelativeLayout>
+<include layout="@layout/success_layout" />
+    <include layout="@layout/fail_layout" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

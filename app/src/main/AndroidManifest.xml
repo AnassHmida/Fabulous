@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.Fabulous">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+       android:requestLegacyExternalStorage="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/AppTheme"
+        >
+        <activity android:name="com.example.Fabulous.UI.Activities.LoginActivity.LoginActivity"
+            android:windowSoftInputMode="adjustResize">
+
+    </activity>
+        <activity android:name="com.example.Fabulous.UI.Activities.MainActivity.MainActivity">
+
+    </activity>
+        <activity android:name="com.example.Fabulous.UI.Activities.DetailsActivity.DetailsActivity">
+
+        </activity>
+        <activity android:name="com.example.Fabulous.UI.Activities.VideoPlayerActivity.ExoPlayerActivity">
+
+        </activity>
+        <activity android:name="com.example.Fabulous.UI.Activities.ActualiteActivity.NewActualitePostActivity">
+
+        </activity>
+        <activity android:name="com.example.Fabulous.UI.Activities.SplashScreenActivity.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:process=":remote" android:name=".Utils.Alarms.RefreshUserTokenID"></receiver>
+    </application>
+
+</manifest>

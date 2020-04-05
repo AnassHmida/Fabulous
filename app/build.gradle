@@ -1,0 +1,110 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.example.rxjavadependencyinjection"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    packagingOptions{
+        exclude 'META-INF/rxjava.properties'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:design:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    
+    //dagger
+    implementation 'com.google.dagger:dagger:2.27'
+    implementation 'com.google.dagger:dagger-android-support:2.27'
+    implementation 'com.google.dagger:dagger-android:2.27'
+
+    api 'com.google.dagger:dagger-android:2.27'
+    api 'com.google.dagger:dagger-android-support:2.27' // if you use the support libraries
+
+
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.27'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.27'
+
+
+
+
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.8.1'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.8.1'
+
+    //ButterKnife
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+
+    // Rx-Retrofit Call Adapter
+    def rxcalladapter_version = '2.5.0'
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$rxcalladapter_version" // Retrofit call adapter
+
+    //gson
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    //okhttp
+  implementation 'com.squareup.okhttp3:logging-interceptor:4.4.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.4.0'
+
+    implementation "com.squareup.okhttp3:okhttp-urlconnection:4.4.0"
+
+
+    //Paper
+    implementation 'io.paperdb:paperdb:2.6'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+
+
+    //Palette
+    implementation 'com.android.support:palette-v7:28.0.0'
+
+    //Advanced RecyclerView
+    implementation 'com.h6ah4i.android.widget.advrecyclerview:advrecyclerview:1.0.0'
+
+    //PrettyTime
+    implementation 'org.ocpsoft.prettytime:prettytime:4.0.1.Final'
+
+    //ExpoPlayer
+    implementation 'com.google.android.exoplayer:exoplayer:2.7.3'
+
+    //Image Picker
+    implementation 'com.github.esafirm.android-image-picker:imagepicker:2.2.0'
+
+
+    // Reactive Streams (convert Observable to LiveData)
+    def reactivestreams_version = "1.1.1"
+    implementation "android.arch.lifecycle:reactivestreams:$reactivestreams_version"
+
+    // ViewModel and LiveData
+    def lifecycle_version = '2.2.0'
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+
+}

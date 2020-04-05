@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Sun Dec 22 21:38:10 WAT 2019
+0.baseType=DIRECTORY
+0.base=C\:\\Users\\anas\\Desktop\\RxJavaDependencyInjection\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.path=classes.dex
+0.set=DEX
+count=1
